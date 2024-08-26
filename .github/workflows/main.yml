@@ -20,9 +20,9 @@ jobs:
           java-version: 17
 
       - name: Unit Tests
-        run: mvn -B test --file ../student/pom.xml
+        run: mvn -B test --file student/pom.xml
 
       - name: Build the application
         run: |
           mvn clean
-          mvn -B package -- file ../student/pom.xml
+          mvn -B package -- file student/pom.xml
