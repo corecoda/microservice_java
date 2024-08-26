@@ -24,6 +24,6 @@ jobs:
 
       - name: Build the application
         run: |
-          ls
+          cd student
           mvn clean
-          mvn -B package -- file student/pom.xml
+          mvn -B package -- file pom.xml
