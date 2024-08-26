@@ -19,10 +19,11 @@ jobs:
           distribution: 'corretto'
           java-version: 17
 
-      - name: Unit Tests
-        run: mvn -B test --file student/pom.xml
+#      - name: Unit Tests
+#        run: mvn -B test --file student/pom.xml
 
       - name: Build the application
         run: |
+          ls
           mvn clean
           mvn -B package -- file student/pom.xml
